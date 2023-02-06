@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(168, 214, 255);
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: rgb(102, 202, 202);
+    pointer-events: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(102, 202, 202);
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: rgb(102, 202, 202);
+    color: white;
+}
+
+/* Parallax */
+main {
+    position: relative;
+}
+
+#text {
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parallax {
+    height: 100vh;
+    position: relative;
+    perspective: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+/* Seção Sobre */
+.sobre {
+    position: relative;
+    background-color: #006ed0;
+    padding: 100px;
+}
+
+.sobre h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+}
